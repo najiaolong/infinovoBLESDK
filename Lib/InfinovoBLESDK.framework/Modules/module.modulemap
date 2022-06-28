@@ -1,0 +1,11 @@
+framework module InfinovoBLESDK {
+  umbrella header "InfinovoBLESDK.h"
+
+  export *
+  module * { export * }
+}
+
+module InfinovoBLESDK.Swift {
+    header "InfinovoBLESDK-Swift.h"
+    requires objc
+}
