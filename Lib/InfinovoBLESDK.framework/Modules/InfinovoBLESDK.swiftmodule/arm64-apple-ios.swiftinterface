@@ -1,0 +1,294 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.6.1 (swiftlang-5.6.0.323.66 clang-1316.0.20.12)
+// swift-module-flags: -target arm64-apple-ios13.2 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -O -module-name InfinovoBLESDK
+import CommonCrypto
+import CoreBluetooth
+import CoreData
+import CryptoSwift
+import Foundation
+@_exported import InfinovoBLESDK
+import SCrypto
+import Swift
+import SwiftDate
+import UIKit
+import _Concurrency
+import os
+public struct batteryLevelModel : Swift.Codable {
+  public var batteryLevel: Swift.Int
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public protocol GlunovoSDKDelegate : ObjectiveC.NSObjectProtocol {
+  func onResGluCGMPairResultCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluCGMSensorStatusCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluCGMStartSensorCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluCGMFactoryLotCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGlunCGMSensorStartTimeCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluCGMBatteryLevelCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluCGMCalibrationCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluCGMReadingValueCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluHistoryDataCountCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluCGMStatueCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluCGMUpdateBluetoothStateCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+  func onResGluCGMSetTimeCallBack(cgmResResultModel: InfinovoBLESDK.CGMResResultModel)
+}
+public struct deviceResultPirModel : Swift.Codable {
+  public var cgmDeviceType: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public func validateUserPin(pin: Swift.String) -> Swift.Bool
+extension Foundation.UserDefaults {
+  public enum sensorStatus : Swift.String {
+    case CONNECTED
+    case DISCONNECTED
+    case STOPPED
+    case CONNECTING
+    case CALIBRATIONNEED
+    case SCANNING
+    case SCAN_FAIL
+    case CALIBRATION_COMPLETE
+    case RECOMMENDED_CALIBRATION
+    case NO_SENSOR
+    case RUNNING
+    case END
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+  public enum Key : Swift.String {
+    case alarmhighPausedTill
+    case alarmurgentLowPausedTill
+    case alarmLowPausedTill
+    case alarmPausedTill
+    case bloodGlucoseUnitIsMgDl
+    case lowMarkValue
+    case highMarkValue
+    case isMaster
+    case transmitterTypeAsString
+    case transmitterId
+    case pinId
+    case pinIdTxt
+    case defaultUnit
+    case nightScoutEnabled
+    case nightScoutUrl
+    case nightScoutAPIKey
+    case uploadReadingstoDexcomShare
+    case dexcomShareAccountName
+    case dexcomSharePassword
+    case useUSDexcomShareurl
+    case dexcomShareSerialNumber
+    case speakReadings
+    case speakReadingLanguageCode
+    case speakDelta
+    case speakTrend
+    case speakInterval
+    case speakRate
+    case startSensorTimeInfoGiven
+    case licenseInfoAccepted
+    case bluetoothDeviceAddress
+    case bluetoothDeviceName
+    case lastdisConnectTimestamp
+    case isConnected
+    case timeStampLatestNSUploadedBgReadingToNightScout
+    case transmitterBatteryInfo
+    case transmitterResetRequired
+    case timeStampLatestDexcomShareUploadedBgReading
+    case sensorSerialNumber
+    case G6v2ScalingFactor1
+    case G6v2ScalingFactor2
+    case isStart
+    case startSensor
+    case isSImulatorMode
+    case currentUserName
+    case currentSessionId
+    case currentEmail
+    case currentPassword
+    case isCalibrated
+    case HMACKey
+    case macAddress
+    case macAddressString
+    case isWarmingUp
+    case isFirstTimeCalibrated
+    case isNewUser
+    case interval
+    case lastBGIndex
+    case bgIndex
+    case notifToSkip
+    case lastDisplayedNotification
+    case sessionStartDate
+    case lastCalibrationDate
+    case lowLimit
+    case highLimit
+    case highAlarm
+    case unitIsMmol
+    case alarmpen
+    case alarmAlwaysSound
+    case DataNumber
+    case cunrrentName
+    case SonsorId
+    case alarmAlwayshock
+    case check
+    case mode
+    case firstGetHistoryData
+    case FirstAlarmSetings
+    case FirstAlarmLitSetings
+    case SensorFault
+    case factoryID
+    case mol_btn_select
+    case mg_btn_select
+    case alarmPasuse
+    case nminute
+    case factoryIdString
+    case AlarmType
+    case boothoffisTrue
+    case viewportoffsets
+    case NotNeedcalibration
+    case warminguptoVc
+    case MobPhoneNmuber
+    case Notification
+    case isAppStore
+    case playAlarmMusic
+    case playbackgroundMusic
+    case isDaoqiSensor
+    case JiaozhunIndex
+    public init?(rawValue: Swift.String)
+    public typealias RawValue = Swift.String
+    public var rawValue: Swift.String {
+      get
+    }
+  }
+}
+public struct sensorStatusModel : Swift.Codable {
+  public var cgmRunning: Swift.Bool
+  public var sensorNoDuTo: Swift.Bool
+  public var factoryStatue: Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CGMStatueModel : Swift.Codable {
+  public var gluCgmStatue: Swift.String?
+  public var gluCgmStatueMsg: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CGMResResultModel {
+  public var resCode: Swift.Int
+  public var resMsg: Swift.String?
+  public var resData: Any
+}
+public struct DEVICEMODEL : Swift.Codable {
+  public var DeviceType: Swift.String?
+  public var DeviceVersion: Swift.String?
+  public var SDKVersion: Swift.String?
+  public var DeviceName: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@objc @_inheritsConvenienceInitializers public class GlunovoSDK : ObjectiveC.NSObject {
+  public class func sendGluCGMDevicePair(devicePairMode: InfinovoBLESDK.DevicePairModel, Delegate: InfinovoBLESDK.GlunovoSDKDelegate)
+  public class func getGluCGMSensorStatusInfo()
+  public class func sendGluCGMStartSensor(startParamModel: InfinovoBLESDK.StartParamModel)
+  public class func sendGluCGMFactoryLot(GloCgmFactoryLOTModel: InfinovoBLESDK.gloCgmFactoryLOTModel)
+  public class func getGluCGMSensorStartTime()
+  public class func getGluCGMTransmitterInfo(completion: @escaping ((_ result: InfinovoBLESDK.CGMResResultModel) -> Swift.Void))
+  public class func getGluCGMBatteryLevel()
+  public class func sendGluCGMCalibration(CalibrationModel: InfinovoBLESDK.calibrationModel)
+  public class func getGluCGMHistoryDataCount()
+  public class func sendStartScan(completion: @escaping ((_ result: Swift.String) -> Swift.Void))
+  public class func getGluCGMHistoryData(start: Swift.Array<InfinovoBLESDK.HistoryDataRequestParamModel>)
+  public class func sendGluCGMStopScan()
+  public class func getGluCGMStatues()
+  public class func sendGluSensorStartTime(SensorStartTimeModel: InfinovoBLESDK.sensorStartTimeModel)
+  public class func resetCGMDevice(completion: @escaping ((_ result: InfinovoBLESDK.CGMResResultModel) -> Swift.Void))
+  @objc override dynamic public init()
+  @objc deinit
+}
+public struct HistoryDataRequestParamModel {
+  public var startRow: Swift.Int
+  public var endRow: Swift.Int
+  public init(startRow: Swift.Int, endRow: Swift.Int)
+}
+extension Foundation.Data {
+  public func hexEncodedString() -> Swift.String
+}
+public struct transmitterInfoModel : Swift.Codable {
+  public var transmitterSoftwareVersion: Swift.String?
+  public var transmitterFirewareVersion: Swift.String?
+  public var transmitterName: Swift.String?
+  public var deviceMac: Swift.String?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CGMReadingModel : Swift.Codable {
+  public var time: Swift.Double
+  public var dateStr: Swift.String?
+  public var value: Swift.Double
+  public var idWithinSession: Swift.Int
+  public var isHistory: Swift.Bool
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct gloCgmFactoryLOTModel {
+  public var gloCGMFactoryLot: Swift.String?
+  public init(gloCGMFactoryLot: Swift.String?)
+}
+public struct GluHistoryDataCount {
+  public var hisCount: Swift.Int
+  public init(hisCount: Swift.Int)
+}
+public struct StartParamModel {
+  public init(startTime: Foundation.Date?, sensorLot: Swift.String?)
+}
+public struct calibrationModel {
+  public var calibrationValue: Swift.Double
+  public var unit: Swift.Int
+  public init(calibrationValue: Swift.Double, unit: Swift.Int)
+}
+public struct BuletoothStateModel : Swift.Codable {
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+@_hasMissingDesignatedInitializers public class CGMGlunovoCGMData : Swift.Codable {
+  @objc deinit
+  public func encode(to encoder: Swift.Encoder) throws
+  required public init(from decoder: Swift.Decoder) throws
+}
+public struct sensorStartTimeModel : Swift.Codable {
+  public var year: Swift.Int
+  public var month: Swift.Int
+  public var day: Swift.Int
+  public var hours: Swift.Int
+  public var minutes: Swift.Int
+  public var seconds: Swift.Int
+  public var timeZone: Swift.Int
+  public init(Year: Swift.Int, Month: Swift.Int, Day: Swift.Int, Hours: Swift.Int, Minutes: Swift.Int, Seconds: Swift.Int, TimeZone: Swift.Int)
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct DevicePairModel {
+  public var transmitterLot: Swift.String?
+  public var transmitterPin: Swift.String?
+  public init(transmitterLot: Swift.String?, transmitterPin: Swift.String?)
+}
+public struct startSensorModel : Swift.Codable {
+  public var sensorStartTime: Swift.Double
+  public var warmUpTime: Swift.Int
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+public struct CGMDATA : Swift.Codable {
+  public var date: Foundation.Date?
+  public var timeoffset: Swift.Int?
+  public var cgm: Swift.Double?
+  public func encode(to encoder: Swift.Encoder) throws
+  public init(from decoder: Swift.Decoder) throws
+}
+extension Foundation.UserDefaults.sensorStatus : Swift.Equatable {}
+extension Foundation.UserDefaults.sensorStatus : Swift.Hashable {}
+extension Foundation.UserDefaults.sensorStatus : Swift.RawRepresentable {}
+extension Foundation.UserDefaults.Key : Swift.Equatable {}
+extension Foundation.UserDefaults.Key : Swift.Hashable {}
+extension Foundation.UserDefaults.Key : Swift.RawRepresentable {}

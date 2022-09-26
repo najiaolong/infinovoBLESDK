@@ -24,9 +24,13 @@
 		<data>
 		NFWN5Gu1qCmCz2SRGwvSsQ+XX3k=
 		</data>
+		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<data>
+		+YNaqBXvAOiruyT0nqhvmLv5+eM=
+		</data>
 		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		sy6ZZJf0UVXaEODxhuF8ZkYguP0=
+		SHANoGYoK8LpVxCzuVwyfl4r8CA=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -79,15 +83,26 @@
 			AAivOrpgHxIYKf8xrBrd8UcO2QrvQKh3qIb/JT8EFyk=
 			</data>
 		</dict>
+		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			+YNaqBXvAOiruyT0nqhvmLv5+eM=
+			</data>
+			<key>hash2</key>
+			<data>
+			+sNJIviJAC/BqsVJiFpjF5xX+VJt8poXkMboV80dig8=
+			</data>
+		</dict>
 		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			sy6ZZJf0UVXaEODxhuF8ZkYguP0=
+			SHANoGYoK8LpVxCzuVwyfl4r8CA=
 			</data>
 			<key>hash2</key>
 			<data>
-			DKroCA442RpneB9+boSTQjhH95OhKSujIlLhv0mrT1c=
+			9ZvivCIG78IeNnL5q0bJ3bQ1xBrKR/EI+9I2FaQaHw8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
