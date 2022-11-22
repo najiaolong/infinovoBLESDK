@@ -6,7 +6,7 @@
 	<dict>
 		<key>Headers/InfinovoBLESDK-Swift.h</key>
 		<data>
-		zTkMkYRcFVKez1bthfAhrkBH50M=
+		if6vq0kKO6SE0m3UTo2s+XM/0Mo=
 		</data>
 		<key>Headers/InfinovoBLESDK.h</key>
 		<data>
@@ -14,27 +14,35 @@
 		</data>
 		<key>Info.plist</key>
 		<data>
-		vl436hHokdfaleIrSK4xyxtJ5+g=
+		tCcGEJ88AYAfCGp07ivAlDPdpgg=
 		</data>
 		<key>Modules/InfinovoBLESDK.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		95bsc6l5PlMpLIOMV5noWzvxmjs=
+		F+WDO/CDp2+nspJhj4klAkO8ykE=
+		</data>
+		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<data>
+		oDipkXdqGXCJsjImHSUlCblzLzA=
+		</data>
+		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<data>
+		Xa2GYi9xAM6+n10WtOyiIjlCLxg=
 		</data>
 		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		NFWN5Gu1qCmCz2SRGwvSsQ+XX3k=
+		WDsPb+UFMpR3BZrqecBOxNSHJA4=
 		</data>
 		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<data>
-		+YNaqBXvAOiruyT0nqhvmLv5+eM=
+		Xa2GYi9xAM6+n10WtOyiIjlCLxg=
 		</data>
 		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		SHANoGYoK8LpVxCzuVwyfl4r8CA=
+		yRV2N9rT/PheIqyydE2LGWu/Hqw=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
-		hNrrloQ7GhTAlA9PUR/Ms306edo=
+		hC7vJMp81rSzRxWaYIsjSQJi4gQ=
 		</data>
 	</dict>
 	<key>files2</key>
@@ -43,11 +51,11 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			zTkMkYRcFVKez1bthfAhrkBH50M=
+			if6vq0kKO6SE0m3UTo2s+XM/0Mo=
 			</data>
 			<key>hash2</key>
 			<data>
-			f5RUOxq5FiHKtTniG3cdIE8b3f8DYa/+eh1ILC9ROMA=
+			cGhCqOZq84fb/GZcxcQjNjrwHocTa+GmX8+sGIHuFcE=
 			</data>
 		</dict>
 		<key>Headers/InfinovoBLESDK.h</key>
@@ -65,55 +73,77 @@
 		<dict>
 			<key>hash</key>
 			<data>
-			95bsc6l5PlMpLIOMV5noWzvxmjs=
+			F+WDO/CDp2+nspJhj4klAkO8ykE=
 			</data>
 			<key>hash2</key>
 			<data>
-			49gYkthlaXW5jMnxcGj459XtQ+3D/j5C/3UNT/v0ip8=
+			5hTMTa59FF66r41XtpWJR0wMrzKmXTiNv/NlM8ztgHA=
+			</data>
+		</dict>
+		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.abi.json</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			oDipkXdqGXCJsjImHSUlCblzLzA=
+			</data>
+			<key>hash2</key>
+			<data>
+			lml1WdXNEXAav2ckRwHiaB+goMGbwDajWbpDpK0ctKo=
+			</data>
+		</dict>
+		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.private.swiftinterface</key>
+		<dict>
+			<key>hash</key>
+			<data>
+			Xa2GYi9xAM6+n10WtOyiIjlCLxg=
+			</data>
+			<key>hash2</key>
+			<data>
+			O2w4e0LIYTPeqNj+5oW+WSf1QAhs3hiEujO5W7TYi7w=
 			</data>
 		</dict>
 		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			NFWN5Gu1qCmCz2SRGwvSsQ+XX3k=
+			WDsPb+UFMpR3BZrqecBOxNSHJA4=
 			</data>
 			<key>hash2</key>
 			<data>
-			AAivOrpgHxIYKf8xrBrd8UcO2QrvQKh3qIb/JT8EFyk=
+			ZF8N0Pbq680Jt0gez4Fr2fee75VUK1OKlx6uBnnuHiU=
 			</data>
 		</dict>
 		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftinterface</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			+YNaqBXvAOiruyT0nqhvmLv5+eM=
+			Xa2GYi9xAM6+n10WtOyiIjlCLxg=
 			</data>
 			<key>hash2</key>
 			<data>
-			+sNJIviJAC/BqsVJiFpjF5xX+VJt8poXkMboV80dig8=
+			O2w4e0LIYTPeqNj+5oW+WSf1QAhs3hiEujO5W7TYi7w=
 			</data>
 		</dict>
 		<key>Modules/InfinovoBLESDK.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			SHANoGYoK8LpVxCzuVwyfl4r8CA=
+			yRV2N9rT/PheIqyydE2LGWu/Hqw=
 			</data>
 			<key>hash2</key>
 			<data>
-			9ZvivCIG78IeNnL5q0bJ3bQ1xBrKR/EI+9I2FaQaHw8=
+			wbJbOBteEUfQEP5/VCzdkSSf9RjF/vRzro1MD2jw+f8=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>
 		<dict>
 			<key>hash</key>
 			<data>
-			hNrrloQ7GhTAlA9PUR/Ms306edo=
+			hC7vJMp81rSzRxWaYIsjSQJi4gQ=
 			</data>
 			<key>hash2</key>
 			<data>
-			qRVyAQ0+0rWPWQ4ogKyYnpwNBY+FEU4P7nAf1xpU6SM=
+			l6rBZjlu7rSYxInQpWfInNSs4jUO5U5veWk9JlmwS5g=
 			</data>
 		</dict>
 	</dict>

@@ -6,6 +6,6 @@ framework module InfinovoBLESDK {
 }
 
 module InfinovoBLESDK.Swift {
-    header "InfinovoBLESDK-Swift.h"
-    requires objc
+  header "InfinovoBLESDK-Swift.h"
+  requires objc
 }
